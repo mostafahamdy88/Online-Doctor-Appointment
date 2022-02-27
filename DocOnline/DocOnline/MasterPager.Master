@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPager.Master.cs" Inherits="DocOnline.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <style type="text/css">
+        body{
+            background: url(Images/top-shadow.jpg);
+        }
+        
+        .style1
+        {
+            width: 1920px;
+            height: 680px;
+        }
+        .divForText
+        {
+            position:absolute;
+        }
+        .footer
+        {
+            position:relative;
+            background:#6F6F6F;
+            height:40px;
+            width:100%;
+            background: #000000;
+            
+            color: #b8c9d3;
+            top: 93px;
+            left: 0px;
+            border-style:outset;
+        }
+        .header {
+            position: relative;
+            background: #6F6F6F;
+            height: 40px;
+            width: 100%;
+            background: #000000;
+            color: #b8c9d3;
+            top: 0px;
+            left: 0px;
+            border-style: outset;
+        }
+        .footer a
+        {   
+            margin-top:50px; 
+            color:#FEFBFB;
+            font-weight: 700;
+        }
+        
+        
+        #form1
+        {
+            height: 371px;
+            width: 100%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Header">
+     <div id="div1" class="divForText">
+       <a href="Index.aspx"> <asp:Image ID="Image2" runat="server" Height="94px" 
+            ImageUrl="~/Images/buttons/HomeButton.png" style="margin-left:14px;" Width="94px" />
+       </a>
+    </div>
+    </div>
+    <asp:Image ID="Image1" runat="server" Height="395px" 
+        ImageUrl="~/Images/masters/Main.jpg" Width="100%" BorderColor="#000000" 
+        BorderStyle="Outset" />
+        
+        <div><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder></div>
+     <div class="footer">
+     <center style="height: 39px; margin-top:10px">
+        <a href="Aboutus.aspx">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+     </center>  
+     </div>
+    </form>
+</body>
+</html>
